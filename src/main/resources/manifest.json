@@ -13,6 +13,6 @@
   "Dependencies": {},
   "OptionalDependencies": {},
   "DisabledByDefault": false,
-  "IncludesAssetPack": true,
+  "IncludesAssetPack": false,
   "Main": "${plugin_main_entrypoint}"
 }
