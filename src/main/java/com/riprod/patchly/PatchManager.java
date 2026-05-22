@@ -1,4 +1,4 @@
-package com.riprod.patcher;
+package com.riprod.patchly;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -146,10 +146,7 @@ public final class PatchManager {
         if (firstRegister) {
             registerOverridePack();
         }
-        // always follow with a targeted serial reload — the engine's priority -16
-        // bulk load (fired by registerPack) misses parent-resolution edge cases
-        // for some assets. v1 unconditionally did register-then-topoSortedReload;
-        // we keep that flow but only reload the files that actually changed.
+
         reloadChangedFiles(changed);
 
         if (!monitorInstalled) {
@@ -168,9 +165,7 @@ public final class PatchManager {
     }
 
     public static boolean isSyntheticOverridePack(@Nonnull String name) {
-        // generic suffix match — any patcher (ours, Zima, Hytalor, future third parties)
-        // following the *_PatcherOverrides naming convention is treated as someone else's
-        // synthetic output and skipped. legacy strings retained for back-compat.
+
         if (name.endsWith(OVERRIDE_PACK_SUFFIX)) return true;
         if (name.endsWith(":Hytalor-Overrides")) return true;
         if ("Riprod:patched".equals(name)) return true;
@@ -439,10 +434,6 @@ public final class PatchManager {
                 installed, skipped);
     }
 
-    // hot-reload entry. delegates to rebuildAndApply, which will pick up the
-    // .patch file's change via per-file content diff and reload only the affected
-    // target. delete path explicitly removes the synthetic file because compose
-    // no longer "sees" a deleted patch and wouldn't otherwise clean it up.
     void onPatchEvent(@Nonnull AssetPack pack, @Nonnull Path patchFile) {
         if (!active) return;
         if (!PathUtil.isPatchFile(patchFile)) return;
@@ -458,12 +449,10 @@ public final class PatchManager {
                             "[patcher] failed to delete override %s", target);
                 }
             }
-            // recompose & reload so the engine drops the asset that just lost its patch
             rebuildAndApply("patchDelete:" + pack.getName() + ":" + patchFile.getFileName());
         }
     }
 
-    // base asset hot-edit → re-merge any patches that target it.
     void onBaseEvent(@Nonnull AssetPack pack, @Nonnull Path changedJson) {
         if (!active) return;
         rebuildAndApply("baseEdit:" + pack.getName() + ":" + changedJson.getFileName());

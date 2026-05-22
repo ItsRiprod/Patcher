@@ -1,4 +1,4 @@
-package com.riprod.patcher;
+package com.riprod.patchly;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

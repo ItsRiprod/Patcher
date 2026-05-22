@@ -1,4 +1,4 @@
-package com.riprod.patcher;
+package com.riprod.patchly;
 
 import com.hypixel.hytale.assetstore.AssetPack;
 import com.hypixel.hytale.server.core.asset.monitor.AssetMonitorHandler;

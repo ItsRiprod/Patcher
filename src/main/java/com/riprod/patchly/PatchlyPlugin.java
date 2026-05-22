@@ -1,4 +1,4 @@
-package com.riprod.patcher;
+package com.riprod.patchly;
 
 import com.hypixel.hytale.event.EventPriority;
 import com.hypixel.hytale.logger.HytaleLogger;
@@ -10,11 +10,11 @@ import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 
 import java.util.concurrent.CompletableFuture;
 
-public final class PatcherPlugin extends JavaPlugin {
+public final class PatchlyPlugin extends JavaPlugin {
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
     private final PatchManager patchManager;
 
-    public PatcherPlugin(JavaPluginInit init) {
+    public PatchlyPlugin(JavaPluginInit init) {
         super(init);
         LOGGER.atInfo().log("Patcher %s initializing...", this.getManifest().getVersion().toString());
         patchManager = new PatchManager(this.getManifest());
