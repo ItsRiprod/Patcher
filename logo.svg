@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="icon-256.png"
+   inkscape:export-xdpi="136.53"
+   inkscape:export-ydpi="136.53"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:export-bgcolor="#000000fd"
+     inkscape:zoom="3.3116168"
+     inkscape:cx="68.99953"
+     inkscape:cy="88.778389"
+     inkscape:window-width="1025"
+     inkscape:window-height="1139"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect2"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,5.3902215,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,3.883833,0,1 @ F,0,0,1,0,4.8611167,0,1 @ F,0,0,1,0,5.3831986,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#5e5e5e;stroke-width:8.58079;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="112.22894"
+       height="110.79471"
+       x="33.736027"
+       y="24.585789"
+       ry="15.418034" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:98.7978px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#5e5e5e;stroke:#5e5e5e;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       x="30.303354"
+       y="108.82224"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         x="30.303354"
+         y="108.82224"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:98.7978px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0;stroke:#5e5e5e;stroke-opacity:1;stroke-dasharray:none;fill:#5e5e5e;fill-opacity:1">{}</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:51.0115px;writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="-106.3945"
+       y="108.02422"
+       id="text2-1-4"
+       transform="rotate(-90)"><tspan
+         id="tspan2-2-8"
+         x="-106.3945"
+         y="108.02422"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.0115px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:role="line">&gt;</tspan></text>
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:3.72941;stroke-linejoin:round;stroke-dasharray:none"
+       id="rect1-3"
+       width="48.777168"
+       height="48.153992"
+       x="65.505035"
+       y="105.44874"
+       ry="6.7010417" />
+  </g>
+</svg>

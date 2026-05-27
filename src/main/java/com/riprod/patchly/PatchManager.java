@@ -9,6 +9,7 @@ import com.google.gson.JsonPrimitive;
 import com.google.gson.Strictness;
 import com.google.gson.stream.JsonReader;
 import com.hypixel.hytale.assetstore.AssetPack;
+import com.hypixel.hytale.assetstore.AssetPack.PackSource;
 import com.hypixel.hytale.assetstore.AssetRegistry;
 import com.hypixel.hytale.assetstore.AssetStore;
 import com.hypixel.hytale.assetstore.AssetUpdateQuery;
@@ -378,7 +379,7 @@ public final class PatchManager {
                 new ArrayList<>(),
                 false
         );
-        AssetModule.get().registerPack(overridePackName, overrideDir, manifest, false);
+        AssetModule.get().registerPack(overridePackName, overrideDir, manifest, PackSource.CLASSPATH);
     }
 
     private void clearOverrideDirectory(boolean includingRoot) {
