@@ -138,7 +138,7 @@ public final class PatchManager {
 
         if (changed.isEmpty()) {
             LOGGER.at(Level.FINE).log(
-                    "[patcher] noop %s — all %d output(s) byte-identical to disk",
+                    "[patcher] noop %s - all %d output(s) byte-identical to disk",
                     reason, desired.size());
             return;
         }
@@ -333,7 +333,7 @@ public final class PatchManager {
         Set<String> missing = new HashSet<>(required);
         missing.removeAll(present);
         if (missing.isEmpty()) return true;
-        LOGGER.at(Level.INFO).log("[patcher] skip %s — missing required pack(s): %s", patchFile, missing);
+        LOGGER.at(Level.INFO).log("[patcher] skip %s - missing required pack(s): %s", patchFile, missing);
         return false;
     }
 

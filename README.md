@@ -3,12 +3,12 @@
 Patch JSON assets without rewriting it from the ground up. Zero dependancies.
 
 *Why Patchly Exists*
-Hytale's native `Parent: super` only inherits at the outer asset level — most nested codec fields (e.g. `Item.armor.StatModifiers`, `DamageResistance`) use `.append(...)` not `.appendInherited(...)`, so a normal JSON override replaces the whole sub-object and silently wipes everything it didn't restate.
+Hytale's native `Parent: super` only inherits at the outer asset level - most nested codec fields (e.g. `Item.armor.StatModifiers`, `DamageResistance`) use `.append(...)` not `.appendInherited(...)`, so a normal JSON override replaces the whole sub-object and silently wipes everything it didn't restate.
 
 *What patchly does*
 Patchly reads the resolved base asset and deep-merges your `.patch` onto it, so you only write the diff.
 
-Works on every registered `AssetPack` — folder, `.zip`, and `.jar` packs all. JSON-only modders can drop `Patchly.jar` into `mods/`; Java modders can bundle Patchly into their own jar via Gradle Shadow. Patchly coordinates with other instances of patchly to ensure only one patchly is running at a time. This means that your mod can work by itself, with other patchly mods, with the patchly.jar, and more. 
+Works on every registered `AssetPack` - folder, `.zip`, and `.jar` packs all. JSON-only modders can drop `Patchly.jar` into `mods/`; Java modders can bundle Patchly into their own jar via Gradle Shadow. Patchly coordinates with other instances of patchly to ensure only one patchly is running at a time. This means that your mod can work by itself, with other patchly mods, with the patchly.jar, and more. 
 
 ## How patches work
 
@@ -91,7 +91,7 @@ Two mods patching the same field both apply, but the higher `$Priority` writes l
 
 ### Reserved keys
 
-Anything top-level prefixed with `$` is metadata — stripped before merge, never reaches the synthesized asset. `$Requires` and `$Priority` are the two with semantics today; `$Comment` (or any other `$Foo`) is free for your own notes.
+Anything top-level prefixed with `$` is metadata - stripped before merge, never reaches the synthesized asset. `$Requires` and `$Priority` are the two with semantics today; `$Comment` (or any other `$Foo`) is free for your own notes.
 
 ## Using it
 
@@ -164,4 +164,4 @@ If both standalone `Patchly.jar` and a bundling mod are installed in the same JV
 
 - Hot reload works for `.patch` files in folder-pack mods (jar/zip packs apply once on register; no live-reload there).
 - Output lives in `MODS_PATH/<group>_<name>_PatcherOverrides/` and is wiped on every cold start.
-- `[AssetModule] Skipping pack at ..._PatcherOverrides: missing or invalid manifest.json` at boot is benign — the synthetic pack registers programmatically, not via filesystem scan.
+- `[AssetModule] Skipping pack at ..._PatcherOverrides: missing or invalid manifest.json` at boot is benign - the synthetic pack registers programmatically, not via filesystem scan.
